@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Saya - SMK 22 Jakarta</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      margin: 0 0 10px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-weight: 300;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+    }
+    main {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      max-width: 700px;
+      width: 100%;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      backdrop-filter: blur(8px);
+    }
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .photo-container {
+      flex: 0 0 180px;
+      max-width: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      border: 4px solid rgba(255,255,255,0.5);
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; /* Center photo horizontally */
+    }
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    section:last-child {
+      margin-bottom: 0;
+    }
+    h2 {
+      font-weight: 600;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    ul li {
+      background: rgba(255,255,255,0.3);
+      padding: 7px 15px;
+      border-radius: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      transition: background 0.3s ease;
+    }
+    ul li:hover {
+      background: rgba(255,255,255,0.6);
+      cursor: default;
+    }
+    footer {
+      margin-top: 40px;
+      font-weight: 300;
+      font-size: 0.9rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      main {
+        padding: 20px;
+      }
+      .about-container {
+        justify-content: center;
+      }
+      .photo-container {
+        /* margin auto centers it */
+        margin-bottom: 20px;
+        flex: 0 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ferdigo Achda Gamis</h1>
+    <p>Pelajar SMK 22 Jakarta - Jurusan TKJ</p>
+  </header>
+  <main>
+    <section id="about" class="about-container">
+      <div class="photo-container">
+        <img src="Foto_W-removebg-preview.png" alt="Foto Profil" />
+      </div>
+      <div class="about-text">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah siswa SMK 22 Jakarta jurusan Teknik Komputer dan Jaringan (TKJ). Saya tertarik dengan dunia komputer, jaringan, serta teknologi informasi dan bersemangat untuk terus belajar dan berkembang dalam bidang ini.</p>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Keahlian</h2>
+      <ul>
+        <li>Manajemen Jaringan</li>
+        <li>Instalasi & Konfigurasi Server</li>
+        <li>Maintenance Komputer</li>
+        <li>Dasar-dasar Pemrograman</li>
+        <li>Keamanan Jaringan</li>
+        <li>Troubleshooting Hardware & Software</li>
+      </ul>
+    </section>
+    <section id="education">
+      <h2>Pendidikan</h2>
+      <p>SMK 22 Jakarta<br/>Jurusan Teknik Komputer dan Jaringan (TKJ)<br/>Tahun Masuk: 2023 - Sekarang</p>
+    </section>
+    <section id="contact">
+      <h2>Kontak</h2>
+      <p>Email: ferdigoachdagamis@gmail.com</p>
+      <p>Telepon: 0813-8675-1010</p>
+      <p>Alamat: Jakarta, Indonesia</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 Nama Kamu - SMK 22 Jakarta TKJ
+  </footer>
+</body>
+</html>
